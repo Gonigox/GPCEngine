@@ -1,0 +1,8 @@
+Para ejecutar el proyectos basta con ejecutar el .exe de la carpeta Binaries.
+Cuando ejecutas el proyecto desde el .exe los modelos 3D no se ven (no se porque),
+pero cuando ejecutas el proyecto desde la solucion Test.sln en visual studio si que 
+se muestran.
+
+La documentación de las clases del engine estan en la carpeta Documentacion/html, ahí basta
+con abrir cualquier archivo .html y desde el puedes acceder a toda la documentación del 
+engine.

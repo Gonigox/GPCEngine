@@ -1,6 +1,7 @@
 #include <Window.hpp>
 #include <SDL.h>
 #include <OpenGL.hpp>
+#include <Input_Task.hpp>
 //#include <internal/initialize.hpp>
 
 
@@ -69,4 +70,47 @@ void engine::Window::clear()
 void engine::Window::swap_buffers()
 {
     SDL_GL_SwapWindow(window);
+}
+
+bool engine::Window::poll(Event & event)
+{
+    if (window)     // Aunque sería raro, puede llegar a ocurrir que no se haya conseguido crear la ventana...
+    {
+        // Se extrae un evento usando SDL y se convierte a un evento propio de
+        // nuestro engine:
+
+        SDL_Event sdl_event;
+
+        if (SDL_PollEvent (&sdl_event) > 0)
+        {
+            switch (sdl_event.type)
+            {
+                case SDL_QUIT:
+                {
+                    event.type = Event::CLOSE;
+                    break;
+                }
+
+                case SDL_KEYDOWN:
+                {
+                    event.type = Event::KEY_PRESSED;
+                    //Input_Task::KeyUp  [sdl_event.key.keysym.scancode] = true;
+                    event.data.keyboard.key_code = Input_Task::translate_sdl_to_key_code (sdl_event.key.keysym.scancode);
+                    break;
+                }
+
+                case SDL_KEYUP:
+                {
+                    event.type = Event::KEY_RELEASED;
+                    //Input_Task::KeyDown[sdl_event.key.keysym.scancode] = false;
+                    event.data.keyboard.key_code = Input_Task::translate_sdl_to_key_code (sdl_event.key.keysym.scancode);
+                    break;
+                }
+            }
+
+            return true;
+        }
+    }
+
+    return false;
 }

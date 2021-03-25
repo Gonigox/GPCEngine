@@ -15,6 +15,7 @@
     <ClInclude Include="..\..\..\code\headers\Dispatcher.hpp" />
     <ClInclude Include="..\..\..\code\headers\Entity.hpp" />
     <ClInclude Include="..\..\..\code\headers\Input.hpp" />
+    <ClInclude Include="..\..\..\code\headers\Input_Task.hpp" />
     <ClInclude Include="..\..\..\code\headers\internal\declarations.hpp" />
     <ClInclude Include="..\..\..\code\headers\internal\initialize.hpp" />
     <ClInclude Include="..\..\..\code\headers\Kernel.hpp" />
@@ -30,9 +31,11 @@
     <ClInclude Include="..\..\..\code\headers\Window.hpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\code\headers\Input_Task.cpp" />
     <ClCompile Include="..\..\..\code\sources\Dispatcher.cpp" />
     <ClCompile Include="..\..\..\code\sources\Entity.cpp" />
     <ClCompile Include="..\..\..\code\sources\Input.cpp" />
+    <ClCompile Include="..\..\..\code\sources\Input_Task.cpp" />
     <ClCompile Include="..\..\..\code\sources\Kernel.cpp" />
     <ClCompile Include="..\..\..\code\sources\Render_Task.cpp" />
     <ClCompile Include="..\..\..\code\sources\Scene.cpp" />

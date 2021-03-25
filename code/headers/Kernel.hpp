@@ -14,6 +14,7 @@
 #include <Task.hpp>
 #include <Timer.hpp>
 #include <Render_Task.hpp>
+#include <Input_Task.hpp>
 
 namespace engine
 {
@@ -31,14 +32,19 @@ namespace engine
     public:
 
         Task_List   tasks;
+
+        bool exit;
+        bool paused;
+        
+    protected:
         /**
          * @brief Task in charge of rendering all entities in the scene
          *
          */
         Render_Task renderer;
+        Input_Task  input_task;
 
-        bool exit;
-        bool paused;
+        
 
     public:
 

@@ -21,6 +21,32 @@ namespace engine
      */
     class Window
     {
+    public:
+
+        struct Event
+        {
+            enum Type
+            {
+                CLOSE,
+                KEY_PRESSED,
+                KEY_RELEASED
+            }
+            type;
+
+            union Data
+            {
+                struct { int key_code; } keyboard;
+
+                struct
+                {
+                    float x, y;
+                    int   buttons;
+                }
+                mouse;
+            }
+            data;
+        };
+
     private:
 
         SDL_Window   *window;
@@ -55,6 +81,8 @@ namespace engine
         void clear();
 
         void swap_buffers();
+
+        bool poll (Event & event);
 
     };
 }

@@ -10,8 +10,6 @@
 
 namespace engine
 {
-    class Kernel;
-
     enum Key_Code
     {
         KEY_UNKOWN,
@@ -40,27 +38,27 @@ namespace engine
         KEY_8,
         KEY_9,
         
+
+        KEY_NUM = 45 //Based in SDL_NUM_SCANCODES
         //...
     };
 
 
     class Input
     {
-    private:
-
-        static const unsigned char * keystate;
-
     public:
 
-        static bool GetKey(Key_Code key);
+        static bool GetKey    (Key_Code key);
+
+        static bool GetKeyDown(Key_Code key);
+
+        static bool GetKeyUp  (Key_Code key);
 
     protected:
 
         Input() = delete;
 
-        static int translate_sdl_scancode(Key_Code key);
-
-        friend class Kernel;
+        //friend class Kernel;
     };
     
 }

@@ -7,10 +7,10 @@ namespace engine
 
     bool Input::GetKey(Key_Code key)
     {
-        return keystate[translate_sdl_key_code(key)];
+        return keystate[translate_sdl_scancode(key)];
     }
 
-    int Input::translate_sdl_key_code(Key_Code key)
+    int Input::translate_sdl_scancode(Key_Code key)
     {
         switch (key)
         {

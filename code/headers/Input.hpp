@@ -58,7 +58,9 @@ namespace engine
 
         Input() = delete;
 
-        static int translate_sdl_key_code(Key_Code key);
+        static int translate_sdl_scancode(Key_Code key);
+
+        friend class Kernel;
     };
     
 }

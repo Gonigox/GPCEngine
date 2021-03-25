@@ -1,6 +1,5 @@
 #include <Input_Task.hpp>
 #include <Kernel.hpp>
-
 #include <SDL.h>
 
 

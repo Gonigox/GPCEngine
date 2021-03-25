@@ -1,7 +1,5 @@
 #include <Kernel.hpp>
 #include <SDL.h>
-#include <Input.hpp>
-#include <iostream>
 
 engine::Kernel::Kernel(Window & win,Scene & scene) : renderer(1, win, scene), input_task(0, win)
 {

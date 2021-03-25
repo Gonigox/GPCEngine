@@ -1,6 +1,5 @@
 #include <Input.hpp>
 #include <Input_Task.hpp>
-#include <SDL.h>
 
 namespace engine
 {

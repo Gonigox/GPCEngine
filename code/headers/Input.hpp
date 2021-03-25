@@ -57,8 +57,6 @@ namespace engine
     protected:
 
         Input() = delete;
-
-        //friend class Kernel;
     };
     
 }

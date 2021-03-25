@@ -2,7 +2,7 @@
 #include <SDL.h>
 #include <OpenGL.hpp>
 #include <Input_Task.hpp>
-//#include <internal/initialize.hpp>
+#include <internal/initialize.hpp>
 
 
 engine::Window::Window(const std::string& title, int width, int height, bool fullscreen)
@@ -94,7 +94,6 @@ bool engine::Window::poll(Event & event)
                 case SDL_KEYDOWN:
                 {
                     event.type = Event::KEY_PRESSED;
-                    //Input_Task::KeyUp  [sdl_event.key.keysym.scancode] = true;
                     event.data.keyboard.key_code = Input_Task::translate_sdl_to_key_code (sdl_event.key.keysym.scancode);
                     break;
                 }
@@ -102,7 +101,6 @@ bool engine::Window::poll(Event & event)
                 case SDL_KEYUP:
                 {
                     event.type = Event::KEY_RELEASED;
-                    //Input_Task::KeyDown[sdl_event.key.keysym.scancode] = false;
                     event.data.keyboard.key_code = Input_Task::translate_sdl_to_key_code (sdl_event.key.keysym.scancode);
                     break;
                 }

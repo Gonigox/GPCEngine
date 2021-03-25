@@ -45,7 +45,6 @@ namespace engine
         
 
         friend class Input;
-        friend class Window;
     };    
 
 }

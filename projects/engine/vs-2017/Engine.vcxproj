@@ -14,6 +14,7 @@
     <ClInclude Include="..\..\..\code\headers\Component.hpp" />
     <ClInclude Include="..\..\..\code\headers\Dispatcher.hpp" />
     <ClInclude Include="..\..\..\code\headers\Entity.hpp" />
+    <ClInclude Include="..\..\..\code\headers\Input.hpp" />
     <ClInclude Include="..\..\..\code\headers\internal\declarations.hpp" />
     <ClInclude Include="..\..\..\code\headers\internal\initialize.hpp" />
     <ClInclude Include="..\..\..\code\headers\Kernel.hpp" />
@@ -31,6 +32,7 @@
   <ItemGroup>
     <ClCompile Include="..\..\..\code\sources\Dispatcher.cpp" />
     <ClCompile Include="..\..\..\code\sources\Entity.cpp" />
+    <ClCompile Include="..\..\..\code\sources\Input.cpp" />
     <ClCompile Include="..\..\..\code\sources\Kernel.cpp" />
     <ClCompile Include="..\..\..\code\sources\Render_Task.cpp" />
     <ClCompile Include="..\..\..\code\sources\Scene.cpp" />
@@ -38,6 +40,10 @@
     <ClCompile Include="..\..\..\code\sources\Timer.cpp" />
     <ClCompile Include="..\..\..\code\sources\Transform_Component.cpp" />
     <ClCompile Include="..\..\..\code\sources\Window.cpp" />
+    <ClCompile Include="..\..\..\code\sources\winmain.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

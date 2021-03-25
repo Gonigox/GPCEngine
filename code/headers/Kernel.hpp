@@ -14,6 +14,7 @@
 #include <Task.hpp>
 #include <Timer.hpp>
 #include <Render_Task.hpp>
+#include <Input.hpp>
 
 namespace engine
 {
@@ -24,7 +25,11 @@ namespace engine
      */
     class Kernel
     {
+    private:
+
         typedef std::multiset< Task* > Task_List;
+
+    public:
 
         Task_List   tasks;
         /**
@@ -32,6 +37,7 @@ namespace engine
          *
          */
         Render_Task renderer;
+        //Input       input;
 
         bool exit;
         bool paused;

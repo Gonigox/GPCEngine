@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="glt::Render_Node" Collapsed="true">
+    <Position X="4.5" Y="12.25" Width="2.25" />
+    <NestedTypes>
+      <Typedef Name="glt::Render_Node::Drawables" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>E:\UNI\4ºVDJ\Motores\GPCEngine\libraries\opengl-toolkit\headers\Render_Node.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Typedef Name="glt::Render_Node::Drawables_By_Object" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>E:\UNI\4ºVDJ\Motores\GPCEngine\libraries\opengl-toolkit\headers\Render_Node.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Typedef Name="glt::Render_Node::Drawables_By_Material" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>E:\UNI\4ºVDJ\Motores\GPCEngine\libraries\opengl-toolkit\headers\Render_Node.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Typedef Name="glt::Render_Node::Drawables_By_Shader" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>E:\UNI\4ºVDJ\Motores\GPCEngine\libraries\opengl-toolkit\headers\Render_Node.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Typedef Name="glt::Render_Node::Node_Map" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>E:\UNI\4ºVDJ\Motores\GPCEngine\libraries\opengl-toolkit\headers\Render_Node.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Typedef Name="glt::Render_Node::Node_List" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>E:\UNI\4ºVDJ\Motores\GPCEngine\libraries\opengl-toolkit\headers\Render_Node.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAABQAAACAAQAAAAAQBAAAAEAAAAAAAgAAEAyIAA=</HashCode>
+      <FileName>E:\UNI\4ºVDJ\Motores\GPCEngine\libraries\opengl-toolkit\headers\Render_Node.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="engine::Entity">
+    <Position X="10.5" Y="0.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>EAQAAAAAAEAAAAAAAAWAAAAAACEGAAABAEAAAAAAAAA=</HashCode>
+      <FileName>E:\UNI\4ºVDJ\Motores\GPCEngine\code\headers\Entity.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="engine::Component">
+    <Position X="14.5" Y="0.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAABAAAEAAAAAAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>E:\UNI\4ºVDJ\Motores\GPCEngine\code\headers\Component.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="engine::Dispatcher" Collapsed="true">
+    <Position X="19.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAIAAAAAAAAAAIAAAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>E:\UNI\4ºVDJ\Motores\GPCEngine\code\headers\Dispatcher.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="engine::Kernel">
+    <Position X="3.25" Y="0.75" Width="1.5" />
+    <NestedTypes>
+      <Typedef Name="engine::Kernel::Task_List" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>E:\UNI\4ºVDJ\Motores\GPCEngine\code\headers\Kernel.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>CAAAQAAAAAAAAAAAAAAEAAAAAAAgAAgAAAAAAiAAoAA=</HashCode>
+      <FileName>E:\UNI\4ºVDJ\Motores\GPCEngine\code\headers\Kernel.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="engine::Message" Collapsed="true">
+    <Position X="21" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAAAAAABAAAAAAAAAAAAAIAAAAgA=</HashCode>
+      <FileName>E:\UNI\4ºVDJ\Motores\GPCEngine\code\headers\Message.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="engine::Scene">
+    <Position X="6" Y="0.75" Width="2.75" />
+    <NestedTypes>
+      <Typedef Name="engine::Scene::Entity_Map" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>E:\UNI\4ºVDJ\Motores\GPCEngine\code\headers\Scene.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAAAgAAgAAEAAAAAAAAIAAAABAAAgAI=</HashCode>
+      <FileName>E:\UNI\4ºVDJ\Motores\GPCEngine\code\headers\Scene.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="engine::Window">
+    <Position X="0.75" Y="0.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAIAAAAAAAEAAAAAAAABAQAEgAgIAAAACAIAAAA=</HashCode>
+      <FileName>E:\UNI\4ºVDJ\Motores\GPCEngine\code\headers\Window.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="engine::Render_Task">
+    <Position X="4.5" Y="9" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAgACAAAAAAEAAAAAEIAAAQAAAIIgAAAAAAA=</HashCode>
+      <FileName>E:\UNI\4ºVDJ\Motores\GPCEngine\code\headers\Render_Task.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="engine::Task">
+    <Position X="4.75" Y="4.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAAAAAUBAAAAAAAAAQAAAMAgAAAAAAI=</HashCode>
+      <FileName>E:\UNI\4ºVDJ\Motores\GPCEngine\code\headers\Task.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="engine::Timer">
+    <Position X="0.75" Y="4.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAgAAAAAAAAAAAAAAAAAAACAAAGAAA=</HashCode>
+      <FileName>E:\UNI\4ºVDJ\Motores\GPCEngine\code\headers\Timer.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="engine::Transform_Component">
+    <Position X="14" Y="5.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAgABGAIAACAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>E:\UNI\4ºVDJ\Motores\GPCEngine\code\headers\Transform_Component.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="engine::Variant" Collapsed="true">
+    <Position X="22.75" Y="1" Width="2" />
+    <NestedTypes>
+      <Enum Name="engine::Variant::Type" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>E:\UNI\4ºVDJ\Motores\GPCEngine\code\headers\Variant.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>GAAAAAAAAAAAAAACAAAMRAAAAACBACCAgAAiAAAAAAg=</HashCode>
+      <FileName>E:\UNI\4ºVDJ\Motores\GPCEngine\code\headers\Variant.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="engine::Observer" Collapsed="true">
+    <Position X="19.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>E:\UNI\4ºVDJ\Motores\GPCEngine\code\headers\Observer.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="engine::Vector3" Collapsed="true">
+    <Position X="0.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAABgAQAAAAA=</HashCode>
+      <FileName>E:\UNI\4ºVDJ\Motores\GPCEngine\code\headers\Vector3.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Typedef Name="SDL_Window" Collapsed="true">
+    <Position X="0.75" Y="10" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>E:\UNI\4ºVDJ\Motores\GPCEngine\code\headers\internal\declarations.hpp</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="SDL_GLContext" Collapsed="true">
+    <Position X="0.75" Y="10.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>E:\UNI\4ºVDJ\Motores\GPCEngine\code\headers\internal\declarations.hpp</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="Mix_Music" Collapsed="true">
+    <Position X="0.75" Y="8.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>E:\UNI\4ºVDJ\Motores\GPCEngine\code\headers\internal\declarations.hpp</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="Mix_Chunk" Collapsed="true">
+    <Position X="0.75" Y="9.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>E:\UNI\4ºVDJ\Motores\GPCEngine\code\headers\internal\declarations.hpp</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -13,7 +13,6 @@
 #include <memory>
 #include <map>
 #include <Window.hpp>
-#include <Render_Task.hpp>
 
 namespace engine
 {
@@ -50,6 +49,11 @@ namespace engine
     public:
 
         Scene(const std::string& title, int width, int height, bool fullscreen);
+
+        ~Scene()
+        {
+
+        }
 
     public:
 

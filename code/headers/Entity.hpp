@@ -42,14 +42,6 @@ namespace engine
          */
         Entity(std::string model);
 
-        ~Entity()
-        {
-            for (Entity* child : childs) 
-            {
-                delete child;
-            }
-        }
-
         bool initialize();
 
         /**

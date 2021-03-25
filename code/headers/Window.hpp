@@ -13,8 +13,7 @@
 #include <internal/declarations.hpp>
 
 namespace engine
-{
-
+{    
     /**
      * @brief Window class
      *

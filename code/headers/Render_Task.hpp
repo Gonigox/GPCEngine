@@ -9,6 +9,7 @@
 #pragma once
 
 #include <Task.hpp>
+#include <Window.hpp>
 #include <memory>
 #include <string>
 #include <internal/declarations.hpp>
@@ -16,7 +17,6 @@
 namespace engine
 {
 	class Scene;
-	class Window;
 
 	/**
 	 * @brief Render_Task

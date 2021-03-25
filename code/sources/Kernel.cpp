@@ -1,4 +1,5 @@
 #include <Kernel.hpp>
+#include <SDL.h>
 
 void engine::Kernel::add_task(Task& task)
 {
@@ -9,6 +10,7 @@ void engine::Kernel::add_task(Task& task)
 void engine::Kernel::execute()
 {
     exit = false;
+    SDL_Event sdl_event;
 
     for (auto task : tasks)
     {
@@ -20,6 +22,13 @@ void engine::Kernel::execute()
     while (!exit)
     {
         Timer timer;
+
+        SDL_PollEvent(&sdl_event);
+
+        if(sdl_event.type == SDL_QUIT)
+        {
+            exit = true;
+        }
 
         for (auto task : tasks)
         {

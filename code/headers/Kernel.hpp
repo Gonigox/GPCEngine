@@ -15,6 +15,7 @@
 #include <Timer.hpp>
 #include <Render_Task.hpp>
 #include <Input_Task.hpp>
+#include <Script_Task.hpp>
 
 namespace engine
 {
@@ -43,6 +44,8 @@ namespace engine
          */
         Render_Task renderer;
         Input_Task  input_task;
+
+        Script_Task script_task;
 
         
 

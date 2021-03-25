@@ -23,6 +23,8 @@
     <ClInclude Include="..\..\..\code\headers\Observer.hpp" />
     <ClInclude Include="..\..\..\code\headers\Render_Task.hpp" />
     <ClInclude Include="..\..\..\code\headers\Scene.hpp" />
+    <ClInclude Include="..\..\..\code\headers\Script_Component.hpp" />
+    <ClInclude Include="..\..\..\code\headers\Script_Task.hpp" />
     <ClInclude Include="..\..\..\code\headers\Task.hpp" />
     <ClInclude Include="..\..\..\code\headers\Timer.hpp" />
     <ClInclude Include="..\..\..\code\headers\Transform_Component.hpp" />
@@ -32,6 +34,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\code\headers\Input_Task.cpp" />
+    <ClCompile Include="..\..\..\code\headers\Script_Component.cpp" />
     <ClCompile Include="..\..\..\code\sources\Dispatcher.cpp" />
     <ClCompile Include="..\..\..\code\sources\Entity.cpp" />
     <ClCompile Include="..\..\..\code\sources\Input.cpp" />
@@ -39,6 +42,7 @@
     <ClCompile Include="..\..\..\code\sources\Kernel.cpp" />
     <ClCompile Include="..\..\..\code\sources\Render_Task.cpp" />
     <ClCompile Include="..\..\..\code\sources\Scene.cpp" />
+    <ClCompile Include="..\..\..\code\sources\Script_Task.cpp" />
     <ClCompile Include="..\..\..\code\sources\Task.cpp" />
     <ClCompile Include="..\..\..\code\sources\Timer.cpp" />
     <ClCompile Include="..\..\..\code\sources\Transform_Component.cpp" />

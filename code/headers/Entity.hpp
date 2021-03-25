@@ -85,6 +85,8 @@ namespace engine
          */
         void delete_component(const std::string &type);
 
+        Component * get_Component(const std::string &type);
+
         /**
          * @brief Set the parent object
          *

@@ -1,12 +1,14 @@
 #include <Kernel.hpp>
+#include <Script_Task.hpp>
 #include <SDL.h>
 
-engine::Kernel::Kernel(Window & win,Scene & scene) : renderer(1, win, scene), input_task(0, win)
+engine::Kernel::Kernel(Window & win,Scene & scene) : renderer(2, win, scene), input_task(0, win), script_task(1, scene)
 {
     exit   = false;
     paused = false;
 
     add_task(input_task);
+    add_task(script_task);
     add_task(renderer);
 }
 

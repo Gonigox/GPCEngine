@@ -44,6 +44,20 @@ void engine::Entity::delete_component(const std::string &component_name)
     components.erase(component_name);
 }
 
+engine::Component * engine::Entity::get_Component(const std::string & type)
+{
+    auto component = components.find(type);
+
+    if(component != components.end())
+    {
+        return component->second.get();
+    }
+        
+    return nullptr;
+}
+
+
+
 bool engine::Entity::set_parent(Entity* parent)
 {
     for(Entity* child : childs)

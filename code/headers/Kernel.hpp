@@ -14,7 +14,6 @@
 #include <Task.hpp>
 #include <Timer.hpp>
 #include <Render_Task.hpp>
-#include <Input.hpp>
 
 namespace engine
 {
@@ -37,19 +36,13 @@ namespace engine
          *
          */
         Render_Task renderer;
-        //Input       input;
 
         bool exit;
         bool paused;
 
     public:
 
-        Kernel(Window &win, Scene &scene) : renderer(0, win, scene)
-        {
-            exit   = false;
-            paused = false;
-            add_task(renderer);
-        }
+        Kernel(Window &win, Scene &scene);
 
         /**
          * @brief Add new task to the engine

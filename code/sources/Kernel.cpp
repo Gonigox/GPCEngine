@@ -1,6 +1,16 @@
 #include <Kernel.hpp>
 #include <SDL.h>
 
+#include <Input.hpp>
+#include <iostream>
+
+engine::Kernel::Kernel(Window & win,Scene & scene) : renderer(0, win, scene)
+{
+    exit   = false;
+    paused = false;
+    add_task(renderer);
+}
+
 void engine::Kernel::add_task(Task& task)
 {
     tasks.insert(&task);

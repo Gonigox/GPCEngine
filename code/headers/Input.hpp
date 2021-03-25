@@ -46,7 +46,7 @@ namespace engine
 
     class Input
     {
-    protected:
+    private:
 
         static const unsigned char * keystate;
 
@@ -54,13 +54,11 @@ namespace engine
 
         static bool GetKey(Key_Code key);
 
-    private:
+    protected:
 
-        Input();
+        Input() = delete;
 
         static int translate_sdl_key_code(Key_Code key);
-
-        friend class Kernel;
     };
     
 }

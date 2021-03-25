@@ -3,14 +3,11 @@
 
 namespace engine
 {
-    Input::Input()
-    {
-        keystate = SDL_GetKeyboardState(NULL);
-    }    
-    
+    const Uint8 * Input::keystate = SDL_GetKeyboardState(NULL);
+
     bool Input::GetKey(Key_Code key)
     {
-        return true;//keystate[translate_sdl_key_code(key)];
+        return keystate[translate_sdl_key_code(key)];
     }
 
     int Input::translate_sdl_key_code(Key_Code key)

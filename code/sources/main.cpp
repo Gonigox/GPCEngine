@@ -24,7 +24,6 @@ int main()
 
     scene.add_Entity("Monkey01", monkey01);    
     scene.add_Entity("Monkey02", monkey02, new Vector3(10, 0, 0), new Vector3(180, 180, 0), new Vector3(3, 3, 3));
-    
 
     scene.start_game();
 
